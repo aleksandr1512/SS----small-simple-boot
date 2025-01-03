@@ -26,8 +26,6 @@ mainloop:
     mov si, new_line          ; печатаем символ новой строки
     call print
 
-	call main_void
-
     mov si, new_line          ; печатаем символ новой строки
     call print
 
