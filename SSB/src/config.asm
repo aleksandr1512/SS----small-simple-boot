@@ -7,22 +7,6 @@ new_line: db 0x0d, 0xa, 0
 
 help_command: db "help", 0
 
-call1_command: db "call1", 0
-call1_text: db "call1", 0
-test_input_command: db "input", 0
-
-test_input:
-	call done
-	call get_input
-	mov si, new_line
-	call print
-	mov si, buffer
-	call print
-	jmp done
-call1:
-	mov si, call1_text
-	call print
-	jmp done
 
 on_start:
 
